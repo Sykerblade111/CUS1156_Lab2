@@ -1,3 +1,10 @@
+/*Project:	Lab2
+ *Class:	UniqueWords.java
+ *Author:	Thomas Wu
+ *Date:		2/28/21
+ *This program creates a array list of elements and then prints it out as well
+ *as counting the number of unique elements inside it and printing it out too.
+ */
 import java.util.ArrayList;
 
 public class UniqueWords
@@ -9,13 +16,12 @@ public class UniqueWords
    */
    public static int countUnique(ArrayList<String> list)
    {
-	  int count = 0;
+	  int count = 1;
 	  
-      for (int i = 0; i < list.size(); i++)
-      {		 for (int j = 0; j < list.size(); j++)
-		 {
-			
-		 }
+      for (int i = 0; i < list.size(); i++) {
+			if(list.get(0) != list.get(i)) {
+				count++;
+			}
       }
 	  return count;
    }
